@@ -1,26 +1,29 @@
-body
-{
-	text-align:justify;
+/*@import url("https://www.w3schools.com/w3css/4/w3.css");*/
+
+body {
+    text-align: justify;
 }
 
 
-p.classe1
-{
+p.classe1 {
     font-family: verdana;
     font-size: 14px;
-    color: DarkCyan ;
+    color: DarkCyan;
     background-color: #ccf2ff;
 }
 
-p.classe2
-{
+p.classe2 {
     font-family: Times New Roman;
     font-size: 16px;
-    color: 'w3-deep-orange';
+    color: DarkOliveGreen;
     background-color: DarkCyan;
 }
 
-p#p1
-{
+p#p1 {
     font-size: 8px;
+}
+
+p#p2 {
+    font-size: 10px;
+    background-color: w3-blue;
 }
