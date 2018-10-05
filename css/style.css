@@ -4,8 +4,11 @@ body {
     text-align: justify;
 }
 
+input:focus {
+    background-color: azure;
+}
 
-p.classe1 {
+    p .classe1 {
     font-family: verdana;
     font-size: 14px;
     color: DarkCyan;
@@ -25,5 +28,5 @@ p#p1 {
 
 p#p2 {
     font-size: 10px;
-    background-color: w3-blue;
 }
+
