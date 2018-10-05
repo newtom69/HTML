@@ -4,11 +4,23 @@ body
 }
 
 
-p
+p.classe1
 {
     font-family: verdana;
     font-size: 14px;
-	color: Maroon;
-	background-color: #ccf2ff;
+    color: DarkCyan ;
+    background-color: #ccf2ff;
 }
 
+p.classe2
+{
+    font-family: Times New Roman;
+    font-size: 16px;
+    color: 'w3-deep-orange';
+    background-color: DarkCyan;
+}
+
+p#p1
+{
+    font-size: 8px;
+}
