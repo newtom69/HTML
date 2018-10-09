@@ -13,6 +13,24 @@
     }
 
     document.title = carré(7);
+    
+    function MailNomMaj()
+    {
+        document.formulaire.mail.value = document.formulaire.mail.value.toUpperCase();
+        document.formulaire.nom.value = document.formulaire.nom.value.toUpperCase();
+    }
+    function MailNomMin()
+    {
+        document.formulaire.mail.value  = document.formulaire.mail.value.toLowerCase();
+        document.formulaire.nom.value = document.formulaire.nom.value.toLowerCase();
+    }
+    function MailNomNull()
+    {
+        document.formulaire.mail.value  = "";
+        document.formulaire.nom.value = "";
+        document.getElementsByName("formulaire").reset();
+    }
+
     </script>
 
 
@@ -58,11 +76,46 @@
             ellus et metus interdum, condimentum velit aliquet, congue orci. Nam diam lorem, sce
     </section>
 
-<input
-type = "button"
-value = "3 x 3 ?"
-onclick = alert(carré(3));
-/>
+
+
+
+
+<table border="1">
+        <form name = "formulaire">
+            <tr align="center">
+                <td>Nom</td>
+                <td><input name="nom" type="txt" required /></td>
+            </tr>
+            <tr align="center">
+                <td>Email</td>
+                <td><input name="mail" type="email" required /></td>
+            </tr>
+            <tr align="center">
+                <td>mot de passe</td>
+                <td><input name="psw" type="password" required/></td>
+            </tr>
+            <tr align="center">
+                <td>Êtes-vous client du site ?</td>
+                <td><input name="client" type="radio" value="oui" checked>oui</input><input name="client" type="radio" value="non">non</input></td>
+            </tr>
+            <tr align="center">
+                <td>Date de location ?</td>
+                <td><input name="date" type="date" /></td>
+            </tr>
+            
+            <tr align="center">
+                <td colspan="2"><b>remplissez le formulaire svp</b></td>
+            </tr>
+        </form>
+        
+    </table>
+    <tr align="center">
+        <td><input type = "button" value = "MAJUSCULE" onclick = MailNomMaj(); /></td>  
+        <td><input type = "button" value = "minuscule" onclick = MailNomMin(); /></td>   
+        <td><input type = "button" value = "Effacer" onclick = MailNomNull(); /></td> 
+    </tr>
+
+
 
 
     <section id="formation">
